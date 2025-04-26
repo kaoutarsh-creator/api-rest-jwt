@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dashboard-bg">
+  <header class="navbar">
+    <div class="container nav-content">
+      <div class="logo">JWT Auth App</div>
+      <nav>
+        <a href="index.html">Accueil</a>
+        <a href="signup.html">Signup</a>
+        <a href="login.html">Login</a>
+        <a href="profile.html" class="active">Profile</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="dashboard container">
+    <aside class="sidebar-card">
+      <div class="profile-mini">
+        <img
+          src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80"
+          alt="User"
+        />
+        <h3>Mon Profil</h3>
+        <p class="muted">Espace sécurisé utilisateur</p>
+      </div>
+
+      <div class="side-actions">
+        <button class="btn btn-primary full-btn" onclick="getProfile()">Afficher le profil</button>
+        <button class="btn btn-secondary full-btn" onclick="logout()">Déconnexion</button>
+      </div>
+    </aside>
+
+    <section class="dashboard-content">
+      <div class="dashboard-header">
+        <div>
+          <span class="badge">Zone sécurisée</span>
+          <h1>Dashboard utilisateur</h1>
+          <p>Les informations affichées ici viennent de l’API backend protégée.</p>
+        </div>
+      </div>
+
+      <div class="dashboard-cards">
+        <div class="mini-card">
+          <h4>Authentification</h4>
+          <p>JWT</p>
+        </div>
+        <div class="mini-card">
+          <h4>Backend</h4>
+          <p>Node.js / Express</p>
+        </div>
+        <div class="mini-card">
+          <h4>Sécurité</h4>
+          <p>Cookie + Middleware</p>
+        </div>
+      </div>
+
+      <div class="result-panel">
+        <h2>Résultat</h2>
+        <pre id="profileResult">Cliquer sur "Afficher le profil" pour charger les données...</pre>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

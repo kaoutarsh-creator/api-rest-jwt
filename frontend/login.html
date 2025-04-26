@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="page-bg">
+  <header class="navbar">
+    <div class="container nav-content">
+      <div class="logo">JWT Auth App</div>
+      <nav>
+        <a href="index.html">Accueil</a>
+        <a href="signup.html">Signup</a>
+        <a href="login.html" class="active">Login</a>
+        <a href="profile.html">Profile</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="auth-wrapper">
+    <div class="auth-layout reverse container">
+      <div class="auth-side">
+        <div class="auth-side-content">
+          <span class="badge">Connexion sécurisée</span>
+          <h1>Heureux de te revoir 🔐</h1>
+          <p>
+            Connecte-toi pour générer un token JWT et accéder
+            à ton espace utilisateur protégé.
+          </p>
+          <img
+            src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=1000&q=80"
+            alt="Login"
+          />
+        </div>
+      </div>
+
+      <div class="auth-card">
+        <h2>Login</h2>
+        <p class="muted">Entre tes identifiants pour te connecter.</p>
+
+        <form id="loginForm" class="form-grid">
+          <div class="input-group">
+            <label for="loginNom">Nom</label>
+            <input type="text" id="loginNom" placeholder="Entrer le nom" required />
+          </div>
+
+          <div class="input-group">
+            <label for="loginPassword">Mot de passe</label>
+            <input type="password" id="loginPassword" placeholder="Entrer le mot de passe" required />
+          </div>
+
+          <button type="submit" class="btn btn-primary full-btn">Se connecter</button>
+        </form>
+
+        <div id="loginMessage" class="message-box"></div>
+
+        <p class="bottom-link">
+          Pas encore inscrit ? <a href="signup.html">Créer un compte</a>
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

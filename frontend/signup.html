@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Signup</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="page-bg">
+  <header class="navbar">
+    <div class="container nav-content">
+      <div class="logo">JWT Auth App</div>
+      <nav>
+        <a href="index.html">Accueil</a>
+        <a href="signup.html" class="active">Signup</a>
+        <a href="login.html">Login</a>
+        <a href="profile.html">Profile</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="auth-wrapper">
+    <div class="auth-layout container">
+      <div class="auth-side">
+        <div class="auth-side-content">
+          <span class="badge">Créer un compte</span>
+          <h1>Bienvenue 👋</h1>
+          <p>
+            Inscris-toi pour accéder à une interface sécurisée
+            connectée à ton backend JWT.
+          </p>
+          <img
+            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1000&q=80"
+            alt="Signup"
+          />
+        </div>
+      </div>
+
+      <div class="auth-card">
+        <h2>Signup</h2>
+        <p class="muted">Crée ton compte en remplissant les champs ci-dessous.</p>
+
+        <form id="signupForm" class="form-grid">
+          <div class="input-group">
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" placeholder="Entrer le nom" required />
+          </div>
+
+          <div class="input-group">
+            <label for="prenom">Prénom</label>
+            <input type="text" id="prenom" placeholder="Entrer le prénom" required />
+          </div>
+
+          <div class="input-group">
+            <label for="filiere">Filière</label>
+            <input type="text" id="filiere" placeholder="Ex: DEV, IDA, SIG..." required />
+          </div>
+
+          <div class="input-group">
+            <label for="password">Mot de passe</label>
+            <input type="password" id="password" placeholder="Entrer le mot de passe" required />
+          </div>
+
+          <button type="submit" class="btn btn-primary full-btn">Créer un compte</button>
+        </form>
+
+        <div id="signupMessage" class="message-box"></div>
+
+        <p class="bottom-link">
+          Déjà un compte ? <a href="login.html">Se connecter</a>
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
