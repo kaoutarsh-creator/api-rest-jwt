@@ -31,8 +31,17 @@
       </div>
 
       <div class="side-actions">
-        <button class="btn btn-primary full-btn" onclick="getProfile()">Afficher le profil</button>
-        <button class="btn btn-secondary full-btn" onclick="logout()">Déconnexion</button>
+        <button id="profileBtn" class="btn btn-primary full-btn">
+          Afficher le profil
+        </button>
+
+        <button id="usersBtn" class="btn btn-secondary full-btn">
+          Afficher les utilisateurs
+        </button>
+
+        <button id="logoutBtn" class="btn btn-primary full-btn">
+          Déconnexion
+        </button>
       </div>
     </aside>
 
@@ -62,7 +71,7 @@
 
       <div class="result-panel">
         <h2>Résultat</h2>
-        <pre id="profileResult">Cliquer sur "Afficher le profil" pour charger les données...</pre>
+        <pre id="result">Cliquer sur "Afficher le profil" pour charger les données...</pre>
       </div>
     </section>
   </main>
